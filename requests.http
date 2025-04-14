@@ -1,0 +1,14 @@
+### Отправка новой кредитной заявки
+POST http://localhost:8080/api/credit-applications
+Content-Type: application/json
+
+{
+  "creditAmount": 100000,
+  "loanAmount": 12,
+  "userIncome": 60000,
+  "creditLoad": 0.3,
+  "creditRating": 750
+}
+
+### Получение статуса заявки по ID
+GET http://localhost:8080/api/credit-applications/1
